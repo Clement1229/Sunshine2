@@ -15,16 +15,16 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Developer: Clement Lin"
-        android:ems="10"
-        android:id="@+id/developer_name"
-        android:layout_alignParentTop="true"
+        android:id="@+id/temp_C"
+        android:layout_below="@+id/temp_T"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:text="8°"
+        android:inputType="text"
+        android:layout_gravity="center" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="149dp"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
@@ -32,27 +32,20 @@
         android:layout_below="@+id/developer_name"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="Today, June 24" />
+        android:text="Today, June 24"
+        android:layout_gravity="right|top" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/temp_T"
-        android:layout_below="@+id/editText"
+        android:inputType="textPersonName"
+        android:text="Developer: Clement Lin"
+        android:ems="10"
+        android:id="@+id/developer_name"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="21°"
-        android:inputType="text" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/temp_C"
-        android:layout_below="@+id/temp_T"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:text="8°"
-        android:inputType="text" />
+        android:layout_gravity="left|top" />
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -63,12 +56,24 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="32dp"
-        android:rating="4" />
+        android:rating="4"
+        android:layout_gravity="center_horizontal|top" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp_T"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="21°"
+        android:inputType="text"
+        android:layout_gravity="right|center_vertical" />
 
     <ListView
         android:id="@+id/listview_forecast"
-        android:layout_width="264dp"
+        android:layout_width="122dp"
         android:layout_height="372dp"
-        android:layout_gravity="center_horizontal|top" />
+        android:layout_gravity="left|center_vertical" />
 
 </FrameLayout>
