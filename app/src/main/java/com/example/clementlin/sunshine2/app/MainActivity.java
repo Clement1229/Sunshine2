@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
     /*
             A placegolder fragment containing a simple view
      */
-    public static class PlacegolderFragment extends Fragment {
+    public static class PlaceholderFragment extends Fragment {
         ArrayAdapter<String> mForecastApater;
-        public PlacegolderFragment(){
+        public PlaceholderFragment(){
 
         }
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
